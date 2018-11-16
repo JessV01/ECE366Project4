@@ -1,5 +1,5 @@
 # ECE366Project4
-# Members:
+Members:
 
 Jessica Vargas
 
