@@ -1,6 +1,4 @@
-# ECE366Project4
-## Members:
-
+## ECE366Project4
+### Members:
 ### Jessica Vargas
-
 ### Vaishnavi Medikundam
