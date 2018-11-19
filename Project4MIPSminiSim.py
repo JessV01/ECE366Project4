@@ -41,21 +41,29 @@ def MIPSsim(HexInstr, BinInstr):
 
             elif(fetch[26:32] == '100010'): # 'sub'
                 PC += 1
-                
+                Reg[Rd] = Reg[Rs] - Reg[Rt]
+                print("sub")
                 
             elif(fetch[26:32] == '100110'): # 'xor'
                 PC += 1
+                Reg[Rd] = Reg[Rs] ^ Reg[Rt]
+                print("xor")
                 
             elif(fetch[26:32] == '101010'): # 'slt'
                 PC += 1
-                
-            else:
-                end = True
+                if(Reg[Rs] < Reg[Rt]):
+                    Reg[Rd] = 1
+                else:
+                    Reg[Rd] = 0
+                print("slt")
                 
         else:   #I-type instructions
             Rs = int(fetch[7:11],2)
             Rt = int(fetch[11:16],2)
-            Imm = int(fetch[16:32],2)
+            if(fetch[16] == '0'):
+                Imm = int(fetch[16:32],2)
+            else:
+                Imm = -(65535 -int(fetch[16:32],2)+1)
 
             if(fetch[0:6] == '001000'): # 'addi'
                 PC += 1
@@ -63,19 +71,32 @@ def MIPSsim(HexInstr, BinInstr):
                 print("addi: Rt="+str(Rt)+" Rs="+str(Rs)+" Imm="+str(Imm)+" sum="+str(Reg[Rt]))
 
             elif(fetch[0:6] == '000001'): # 'beq'
-                PC += 1
+                print("beq start")
+                if(Reg[Rs] == Reg[Rt]):
+                    PC = 1 + Imm #MIGHT BE WRONG (check if have to divide by 4??)
+                else:
+                    PC += 1
+                print("beq")
                 
             elif(fetch[0:6] == '000101'): # 'bne'
-                PC += 1
+                if(Reg[Rs] != Reg[Rt]):
+                    PC = 1 + Imm #MIGHT BE WRONG
+                else:
+                    PC += 1
+                print("bne")
                 
             elif(fetch[0:6] == '100011'): # 'lw'
                 PC += 1
+                Imm = int(fetch[16:32],2)
+                Reg[Rt] = Mem[((Reg[Rs] + Imm)-hex(0x2000))]
+                print("lw")
                 
             elif(fetch[0:6] == '101011'): # 'sw'
                 PC += 1
-                
-            else:
-                end = True
+                Imm = int(fetch[16:32],2)
+                print(Imm)
+                Mem[((Reg[Rs] + Imm)-hex(0x2000))] = Reg[Rt]
+                print("sw ")
 
     print("Sim done...")
     
