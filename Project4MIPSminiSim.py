@@ -15,7 +15,8 @@ def MIPSsim(HexInstr, BinInstr, Part2):
     threeCyc = 0    # number of instructions that take...3 cycles   
     fourCyc = 0     # number of instructions that take...4 cycles
     fiveCyc = 0     # number of instructions that take...5 cycles
-
+    hazz = 0             # checks on the number of hazards when goes through
+    
     end = False
     while(not(end)):
         DIC += 1
@@ -119,9 +120,11 @@ def MIPSsim(HexInstr, BinInstr, Part2):
                     prev_Rd = int(get[16:21],2)
                     if((prev_Rd == Rs) | (prev_Rd == Rt)):
                         pipe_cycles += 1
+                        hazz +=1
                 if(Reg[Rs] == Reg[Rt]):
                     PC = PC + Imm + 1
                     pipe_cycles += 1 #branch flush
+                    hazz += 1
                 else:
                     PC += 1
                 if(Part2):
@@ -133,8 +136,16 @@ def MIPSsim(HexInstr, BinInstr, Part2):
             elif(fetch[0:6] == '000101'): # 'bne'
                 threeCyc += 1
                 multi_cycles += 3
+                get = BinInstr[PC-1]
+                if(get[0:6] == '000000'): #checking for stall
+                    prev_Rd = int(get[16:21],2)
+                    if((prev_Rd == Rs) | (prev_Rd == Rt)):
+                        pipe_cycles += 1
+                        hazz +=1
                 if(Reg[Rs] != Reg[Rt]):
                     PC = PC + Imm + 1 
+                    pipe_cycles += 1 #branch flush
+                    hazz += 1
                 else:
                     PC += 1
                 if(Part2):
@@ -154,6 +165,7 @@ def MIPSsim(HexInstr, BinInstr, Part2):
                     prev_Rt = int(get[11:16],2)
                     if((prev_Rs == Rs) | (prev_Rs == Rt) | (prev_Rt == Rs) | (prev_Rt == Rt)):
                         pipe_cycles += 1
+                        hazz += 1
                 else:
                     prev_Rt = int(get[11:16],2)
                     if((prev_Rt == Rs) | (prev_Rt == Rt)):
