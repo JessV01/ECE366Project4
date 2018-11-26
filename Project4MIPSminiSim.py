@@ -133,7 +133,9 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         print("PC = "+str((PC-1)*4)) 
                         print(str(fetch2[0:16])+" --> addi $"+str(Rt)+",$"+str(Rs)+","+str(Imm))
                         print("Takes 4 cycles...\n")
-                    #if (Pipe): 
+                    if (Pipe): 
+                        print("PC = "+str((PC-1)*4)) 
+                        print(str(fetch2[0:16])+" --> addi $"+str(Rt)+",$"+str(Rs)+","+str(Imm))
 
             elif(fetch[0:6] == '000100'): # 'beq'
                 threeCyc += 1
@@ -161,6 +163,8 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         print(str(fetch2[0:16])+" --> beq $"+str(Rs)+",$"+str(Rt)+","+str(Imm))
                         print("Takes 3 cycles...\n")
                     if (Pipe):
+                        print("PC = "+str((PC-1)*4)) 
+                        print(str(fetch2[0:16])+" --> beq $"+str(Rs)+",$"+str(Rt)+","+str(Imm))
                         if((stall == True) | (flush == True)):
                             print("Hazard detected...")
                             if((stall == True) & (flush == True)):
@@ -198,6 +202,8 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         print(str(fetch2[0:16])+" --> bne $"+str(Rs)+",$"+str(Rt)+","+str(Imm))
                         print("Takes 3 cycles...\n")
                     if (Pipe): 
+                        print("PC = "+str((PC-1)*4)) 
+                        print(str(fetch2[0:16])+" --> bne $"+str(Rs)+",$"+str(Rt)+","+str(Imm))
                         if((stall == True) | (flush == True)):
                             print("Hazard detected...")
                             if((stall == True) & (flush == True)):
@@ -233,6 +239,8 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         print(str(fetch2[0:16])+" --> lw $"+str(Rt)+","+str(Imm)+"($"+str(Rs)+")")
                         print("Takes 5 cycles...\n")
                     if (Pipe):
+                        print("PC = "+str((PC-1)*4)) 
+                        print(str(fetch2[0:16])+" --> lw $"+str(Rt)+","+str(Imm)+"($"+str(Rs)+")")
                         if(stall == True):
                             print("Hazard detected...")
                             print("Hazard solved with a stall")
@@ -250,7 +258,9 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         print("PC = "+str((PC-1)*4)) 
                         print(str(fetch2[0:16])+" --> sw $"+str(Rt)+","+str(Imm)+"($"+str(Rs)+")")
                         print("Takes 4 cycles...\n")
-                    #if (Pipe):
+                    if (Pipe):
+                        print("PC = "+str((PC-1)*4)) 
+                        print(str(fetch2[0:16])+" --> sw $"+str(Rt)+","+str(Imm)+"($"+str(Rs)+")")
                         
             else:
                 end = True
