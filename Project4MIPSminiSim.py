@@ -2,10 +2,13 @@
 # Created by: Jessica Vargas, Vaishnavi Medikundam
 # The program takes in MIPS instruction memory in hex and returns data
 
-def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
+def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe, finished):
    
     size_of_mem = 1024                      # NOT SURE IF FOR SURE CORRECT
-    print("-------------------------\nBeginning MIPS simulation...\n-------------------------")
+    if(Multi):
+        print("-------------------------\nBeginning MIPS simulation (multicycle)...\n-------------------------")
+    if(Pipe):
+        print("-------------------------\nBeginning MIPS simulation (pipeline)...\n-------------------------")
     
     Reg = [0,0,0,0,0,0,0,0]                # the $0-$7 registers initialized to 0
     Mem = [0 for i in range(size_of_mem)]   # creates memory array initialized to 0's
@@ -23,6 +26,12 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
         DIC += 1
         fetch = BinInstr[PC]
         fetch2 = HexInstr[PC]
+        size = len(BinInstr)
+        if((PC+1) < size):
+            get1 = BinInstr[PC+1]
+        if((PC+2) < size):
+            get2 = BinInstr[PC+2]
+            
         if(fetch[0:32] == '00010000000000001111111111111111'):
             threeCyc += 1
             multi_cycles += 3
@@ -40,6 +49,7 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                 if (Pipe):
                     print("PC = "+str(PC*4)) 
                     print(str(fetch2[0:16])+" --> beq $0,$0,-1")
+                    print("Deadloop Reached")
             end = True
             
         elif(fetch[0:6] == '000000'): # R-type instructions
@@ -52,7 +62,7 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                 pipe_cycles += 5
             else:
                 pipe_cycles += 1
-            
+    
             if(fetch[26:32] == '100000'): # 'add'
                 PC += 1
                 Reg[Rd] = Reg[Rs] + Reg[Rt]
@@ -107,6 +117,55 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                     if (Pipe): 
                         print("PC = "+str((PC-1)*4)) 
                         print(str(fetch2[0:16])+" --> slt $"+str(Rd)+",$"+str(Rs)+",$"+str(Rt))
+
+            if(Pipe): #where forwarding hazards are checked
+                if(get1[0:6] == '000000'):
+                    Rs1 = int(get1[6:11],2)
+                    Rt1 = int(get1[11:16],2)
+                    if(((Rs1 == Rd) | (Rt1 == Rd)) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                        print("Hazard detected...")
+                        print("Hazard solved by forwarding with no delay\n")
+                    else:
+                        if(get2[0:6] == '000000'):
+                            Rs2 = int(get2[6:11],2)
+                            Rt2 = int(get2[11:16],2)
+                            if(((Rs2 == Rd) | (Rt2 == Rd)) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                print("Hazard detected...")
+                                print("Hazard solved by forwarding with no delay\n")
+                            else:
+                                print("No hazard detected\n")
+                        else:
+                            Rs2 = int(get2[6:11],2)
+                            if((Rs2 == Rd) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                print("Hazard detected...")
+                                print("Hazard solved by forwarding with no delay\n")
+                            else:
+                                print("No hazard detected\n")
+                        
+                else:
+                    if(fetch[0:6] != '100011'):
+                        Rs1 = int(get1[6:11],2)
+                        if((Rs1 == Rd) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                            print("Hazard detected...")
+                            print("Hazard solved by forwarding with no delay\n")
+                        else:
+                            if(get2[0:6] == '000000'):
+                                Rs2 = int(get2[6:11],2)
+                                Rt2 = int(get2[11:16],2)
+                                if(((Rs2 == Rd) | (Rt2 == Rd)) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                    print("Hazard detected...")
+                                    print("Hazard solved by forwarding with no delay\n")
+                                else:
+                                    print("No hazard detected\n")
+                            else:
+                                Rs2 = int(get2[6:11],2)
+                                if((Rs2 == Rd) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                    print("Hazard detected...")
+                                    print("Hazard solved by forwarding with no delay\n")
+                                else:
+                                    print("No hazard detected\n")
+
+                        
             else:
                 end = True
                 
@@ -168,13 +227,13 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         if((stall == True) | (flush == True)):
                             print("Hazard detected...")
                             if((stall == True) & (flush == True)):
-                                print("Hazard solved with a stall and flushing")
+                                print("Hazard solved with a stall and flushing\n")
                             elif(stall == True):
-                                print("Hazard solved with a stall")
+                                print("Hazard solved with a stall\n")
                             elif(flush == True):
-                                print("Hazard solved with flushing")
+                                print("Hazard solved with flushing\n")
                         else:
-                            print("No hazard detected")
+                            print("No hazard detected\n")
                         
             elif(fetch[0:6] == '000101'): # 'bne'
                 threeCyc += 1
@@ -207,13 +266,13 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         if((stall == True) | (flush == True)):
                             print("Hazard detected...")
                             if((stall == True) & (flush == True)):
-                                print("Hazard solved with a stall and flushing")
+                                print("Hazard solved with a stall and flushing\n")
                             elif(stall == True):
-                                print("Hazard solved with a stall")
+                                print("Hazard solved with a stall\n")
                             elif(flush == True):
-                                print("Hazard solved with flushing")
+                                print("Hazard solved with flushing\n")
                         else:
-                            print("No hazard detected")
+                            print("No hazard detected\n")
             elif(fetch[0:6] == '100011'): # 'lw'
                 fiveCyc += 1
                 multi_cycles += 5
@@ -243,9 +302,9 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                         print(str(fetch2[0:16])+" --> lw $"+str(Rt)+","+str(Imm)+"($"+str(Rs)+")")
                         if(stall == True):
                             print("Hazard detected...")
-                            print("Hazard solved with a stall")
+                            print("Hazard solved with a stall\n")
                         else:
-                            print("No hazard detected")
+                            print("No hazard detected\n")
                         
             elif(fetch[0:6] == '101011'): # 'sw'
                 fourCyc += 1
@@ -261,31 +320,79 @@ def MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe):
                     if (Pipe):
                         print("PC = "+str((PC-1)*4)) 
                         print(str(fetch2[0:16])+" --> sw $"+str(Rt)+","+str(Imm)+"($"+str(Rs)+")")
+
+            if(Pipe): #where forwarding hazards are checked
+                if(get1[0:6] == '000000'):
+                    Rs1 = int(get1[6:11],2)
+                    Rt1 = int(get1[11:16],2)
+                    if(((Rs1 == Rt) | (Rt1 == Rt)) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                        print("Hazard detected...")
+                        print("Hazard solved by forwarding with no delay\n")
+                    else:
+                        if(get2[0:6] == '000000'):
+                            Rs2 = int(get2[6:11],2)
+                            Rt2 = int(get2[11:16],2)
+                            if(((Rs2 == Rt) | (Rt2 == Rt)) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                print("Hazard detected...")
+                                print("Hazard solved by forwarding with no delay\n")
+                            else:
+                                print("No hazard detected\n")
+                        else:
+                            Rs2 = int(get2[6:11],2)
+                            if((Rs2 == Rt) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                print("Hazard detected...")
+                                print("Hazard solved by forwarding with no delay\n")
+                            else:
+                                print("No hazard detected\n")
+                        
+                else:
+                    if(fetch[0:6] != '100011'):
+                        Rs1 = int(get1[6:11],2)
+                        if((Rs1 == Rt) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                            print("Hazard detected...")
+                            print("Hazard solved by forwarding with no delay\n")
+                        else:
+                            if(get2[0:6] == '000000'):
+                                Rs2 = int(get2[6:11],2)
+                                Rt2 = int(get2[11:16],2)
+                                if(((Rs2 == Rt) | (Rt2 == Rt)) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                    print("Hazard detected...")
+                                    print("Hazard solved by forwarding with no delay\n")
+                                else:
+                                    print("No hazard detected\n")
+                            else:
+                                Rs2 = int(get2[6:11],2)
+                                if((Rs2 == Rt) & ((fetch[0:6] != '000100') | (fetch[0:6] != '000101'))):
+                                    print("Hazard detected...")
+                                    print("Hazard solved by forwarding with no delay\n")
+                                else:
+                                    print("No hazard detected\n")
                         
             else:
                 end = True
 
     print("-------------------------\nSimulation done...\n-------------------------")
-    print("*Results*:")
-    print("Dynamic Instruction Count: " + str(DIC))
-    print("PC: " + str(PC*4))
-    print("Registers: ")
-    print("   $1 = " + str(Reg[1]))
-    print("   $2 = " + str(Reg[2]))
-    print("   $3 = " + str(Reg[3]))
-    print("   $4 = " + str(Reg[4]))
-    print("   $5 = " + str(Reg[5]))
-    print("   $6 = " + str(Reg[6]))
-    print("   $7 = " + str(Reg[7]))
-    if(Part2):
-        print("For Multicycle CPU:")
-        print("   Total Cycle Count = "+str(multi_cycles))
-        print("   Number of 3-cycle Instructions: "+str(threeCyc))
-        print("   Number of 4-cycle Instructions: "+str(fourCyc))
-        print("   Number of 5-cycle Instructions: "+str(fiveCyc))
-        print("For Pipelined CPU:")
-        print("   Total Cycle Count = "+str(pipe_cycles))
-        print("   Breakdown of hazards = "+str(hazz))
+    if(finished):
+        print("*Results*:")
+        print("Dynamic Instruction Count: " + str(DIC))
+        print("PC: " + str(PC*4))
+        print("Registers: ")
+        print("   $1 = " + str(Reg[1]))
+        print("   $2 = " + str(Reg[2]))
+        print("   $3 = " + str(Reg[3]))
+        print("   $4 = " + str(Reg[4]))
+        print("   $5 = " + str(Reg[5]))
+        print("   $6 = " + str(Reg[6]))
+        print("   $7 = " + str(Reg[7]))
+        if(Part2):
+            print("For Multicycle CPU:")
+            print("   Total Cycle Count = "+str(multi_cycles))
+            print("   Number of 3-cycle Instructions: "+str(threeCyc))
+            print("   Number of 4-cycle Instructions: "+str(fourCyc))
+            print("   Number of 5-cycle Instructions: "+str(fiveCyc))
+            print("For Pipelined CPU:")
+            print("   Total Cycle Count = "+str(pipe_cycles))
+            print("   Breakdown of hazards = "+str(hazz))
 def main():
     i_memfile = open("i_mem.txt", "r")
     HexInstr = [] #array for instructions in hex
@@ -300,10 +407,12 @@ def main():
         BinInstr.append(l)
     Multi = True 
     Pipe = False
-    MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe) #MIPSsim function
+    finished = False
+    MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe, finished) #MIPSsim function
     Multi = False
     Pipe = True
-    MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe)
+    finished = True
+    MIPSsim(HexInstr, BinInstr, Part2, Multi, Pipe, finished)
 
 if __name__ == "__main__": #NOT SURE HOW THIS WORKS BUT HERE IN CASE
     main()
