@@ -1,0 +1,3278 @@
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 27 2018, 04:06:47) [MSC v.1914 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+ RESTART: C:\Users\xpebb\AppData\Local\Programs\Python\Python37-32\Project4MIPSminiSim.py 
+1 = Part 1
+2 = Part 1&2&3
+>>2
+-------------------------
+Beginning MIPS simulation (multicycle)...
+-------------------------
+*CYCLE 1*
+PC = 0
+0x20010002 --> addi $1,$0,2
+Takes 4 cycles...
+
+*CYCLE 5*
+PC = 4
+0x2002001c --> addi $2,$0,28
+Takes 4 cycles...
+
+*CYCLE 9*
+PC = 8
+0xac412000 --> sw $1,8192($2)
+Takes 4 cycles...
+
+*CYCLE 13*
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Takes 4 cycles...
+
+*CYCLE 17*
+PC = 16
+0x10400004 --> beq $2,$0,4
+Takes 3 cycles...
+
+*CYCLE 20*
+PC = 20
+0x00210820 --> add $1,$1,$1
+Takes 4 cycles...
+
+*CYCLE 24*
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Takes 4 cycles...
+
+*CYCLE 28*
+PC = 28
+0x20210003 --> addi $1,$1,3
+Takes 4 cycles...
+
+*CYCLE 32*
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Takes 3 cycles...
+
+*CYCLE 35*
+PC = 8
+0xac412000 --> sw $1,8192($2)
+Takes 4 cycles...
+
+*CYCLE 39*
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Takes 4 cycles...
+
+*CYCLE 43*
+PC = 16
+0x10400004 --> beq $2,$0,4
+Takes 3 cycles...
+
+*CYCLE 46*
+PC = 20
+0x00210820 --> add $1,$1,$1
+Takes 4 cycles...
+
+*CYCLE 50*
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Takes 4 cycles...
+
+*CYCLE 54*
+PC = 28
+0x20210003 --> addi $1,$1,3
+Takes 4 cycles...
+
+*CYCLE 58*
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Takes 3 cycles...
+
+*CYCLE 61*
+PC = 8
+0xac412000 --> sw $1,8192($2)
+Takes 4 cycles...
+
+*CYCLE 65*
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Takes 4 cycles...
+
+*CYCLE 69*
+PC = 16
+0x10400004 --> beq $2,$0,4
+Takes 3 cycles...
+
+*CYCLE 72*
+PC = 20
+0x00210820 --> add $1,$1,$1
+Takes 4 cycles...
+
+*CYCLE 76*
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Takes 4 cycles...
+
+*CYCLE 80*
+PC = 28
+0x20210003 --> addi $1,$1,3
+Takes 4 cycles...
+
+*CYCLE 84*
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Takes 3 cycles...
+
+*CYCLE 87*
+PC = 8
+0xac412000 --> sw $1,8192($2)
+Takes 4 cycles...
+
+*CYCLE 91*
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Takes 4 cycles...
+
+*CYCLE 95*
+PC = 16
+0x10400004 --> beq $2,$0,4
+Takes 3 cycles...
+
+*CYCLE 98*
+PC = 20
+0x00210820 --> add $1,$1,$1
+Takes 4 cycles...
+
+*CYCLE 102*
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Takes 4 cycles...
+
+*CYCLE 106*
+PC = 28
+0x20210003 --> addi $1,$1,3
+Takes 4 cycles...
+
+*CYCLE 110*
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Takes 3 cycles...
+
+*CYCLE 113*
+PC = 8
+0xac412000 --> sw $1,8192($2)
+Takes 4 cycles...
+
+*CYCLE 117*
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Takes 4 cycles...
+
+*CYCLE 121*
+PC = 16
+0x10400004 --> beq $2,$0,4
+Takes 3 cycles...
+
+*CYCLE 124*
+PC = 20
+0x00210820 --> add $1,$1,$1
+Takes 4 cycles...
+
+*CYCLE 128*
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Takes 4 cycles...
+
+*CYCLE 132*
+PC = 28
+0x20210003 --> addi $1,$1,3
+Takes 4 cycles...
+
+*CYCLE 136*
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Takes 3 cycles...
+
+*CYCLE 139*
+PC = 8
+0xac412000 --> sw $1,8192($2)
+Takes 4 cycles...
+
+*CYCLE 143*
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Takes 4 cycles...
+
+*CYCLE 147*
+PC = 16
+0x10400004 --> beq $2,$0,4
+Takes 3 cycles...
+
+*CYCLE 150*
+PC = 20
+0x00210820 --> add $1,$1,$1
+Takes 4 cycles...
+
+*CYCLE 154*
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Takes 4 cycles...
+
+*CYCLE 158*
+PC = 28
+0x20210003 --> addi $1,$1,3
+Takes 4 cycles...
+
+*CYCLE 162*
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Takes 3 cycles...
+
+*CYCLE 165*
+PC = 8
+0xac412000 --> sw $1,8192($2)
+Takes 4 cycles...
+
+*CYCLE 169*
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Takes 4 cycles...
+
+*CYCLE 173*
+PC = 32
+0x10400004 --> beq $2,$0,4
+Takes 3 cycles...
+
+*CYCLE 176*
+PC = 36
+0x20060028 --> addi $6,$0,40
+Takes 4 cycles...
+
+*CYCLE 180*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 184*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2004
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x0
+
+   b.
+     Memory address to access = 0x2004
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2004
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2004
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+*CYCLE 189*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 193*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2008
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2008
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2008
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2008
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+*CYCLE 198*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 202*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x200c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x200c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x200c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x200c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 207*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 211*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 215*
+PC = 72
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 218*
+PC = 76
+0x00802820 --> add $5,$4,$0
+Takes 4 cycles...
+
+*CYCLE 222*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 226*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 229*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 233*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2008
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2008
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2008
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2008
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 238*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 242*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x200c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x200c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x200c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x200c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 247*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 251*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2010
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x0
+
+   b.
+     Memory address to access = 0x2010
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 2's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2010
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2002
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2010
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+*CYCLE 256*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 260*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 264*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 267*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 271*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 274*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 278*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x200c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x200c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x200c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x200c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 283*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 287*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2010
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2010
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2010
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2002
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2010
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 292*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 296*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2014
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2014
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2014
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2002
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2014
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 301*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 305*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 309*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 312*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 316*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 319*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 323*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2010
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2010
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2010
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2002
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2010
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 328*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 332*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2014
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2014
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2014
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2002
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2014
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 337*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 341*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2018
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2018
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 3's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2018
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2003
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2018
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+*CYCLE 346*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 350*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 354*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 357*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 361*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 364*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 368*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2014
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2014
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2014
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2002
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2014
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 373*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 377*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2018
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2018
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2018
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2003
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2018
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 382*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 386*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x201c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x201c
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x201c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2003
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x201c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 391*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 395*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 399*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 402*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 406*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 409*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 413*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2018
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2018
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2018
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2003
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2018
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 418*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 422*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x201c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x201c
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x201c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2003
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x201c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 427*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 431*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x1
+
+   b.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x1
+
+   c.
+     Memory address to access = 0x2020
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2004
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2020
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 1 has a new tag which is 0x0
+
+*CYCLE 436*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 440*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 444*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 447*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 451*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 454*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 458*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x201c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x201c
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x201c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2003
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x201c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 463*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 467*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2020
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2004
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2020
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 472*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 476*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2024
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2004
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2024
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 481*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 485*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 489*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 492*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 496*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 499*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 503*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2020
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2004
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2020
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 508*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 512*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2024
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2004
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2024
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 517*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 521*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2028
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2028
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x1
+
+   c.
+     Memory address to access = 0x2028
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2005
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2028
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 1 has a new tag which is 0x0
+
+*CYCLE 526*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 530*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 534*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 537*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 541*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 544*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 548*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2024
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2004
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2024
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 553*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 557*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2028
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2028
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2028
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2005
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2028
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 562*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 566*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x202c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x202c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x202c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2005
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x202c
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 571*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 575*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 579*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 582*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 586*
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 589*
+PC = 40
+0x00002020 --> add $4,$0,$0
+Takes 4 cycles...
+
+*CYCLE 593*
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2028
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2028
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2028
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2005
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2028
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 598*
+PC = 48
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 602*
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x202c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x202c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x202c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2005
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x202c
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+*CYCLE 607*
+PC = 56
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 611*
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+Takes 5 cycles...
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2030
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x1
+
+   b.
+     Memory address to access = 0x2030
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 2's new tag is 0x1
+
+   c.
+     Memory address to access = 0x2030
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2006
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2030
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 1 has a new tag which is 0x0
+
+*CYCLE 616*
+PC = 64
+0x00812020 --> add $4,$4,$1
+Takes 4 cycles...
+
+*CYCLE 620*
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Takes 4 cycles...
+
+*CYCLE 624*
+PC = 76
+0x10200001 --> beq $1,$0,1
+Takes 3 cycles...
+
+*CYCLE 627*
+PC = 80
+0x20420004 --> addi $2,$2,4
+Takes 4 cycles...
+
+*CYCLE 631*
+PC = 84
+0x1446fff4 --> bne $2,$6,-12
+Takes 3 cycles...
+
+*CYCLE 634*
+PC = 88
+0xac052000 --> sw $5,8192($0)
+Takes 4 cycles...
+
+*CYCLE 638*
+PC = 92
+0x1000ffff --> beq $0,$0,-1
+Takes 3 cycles...
+Deadloop Reached
+-------------------------
+Simulation done...
+-------------------------
+-------------------------
+Beginning MIPS simulation (pipeline)...
+-------------------------
+PC = 0
+0x20010002 --> addi $1,$0,2
+No hazard detected
+
+PC = 4
+0x2002001c --> addi $2,$0,28
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 8
+0xac412000 --> sw $1,8192($2)
+No hazard detected
+
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 16
+0x10400004 --> beq $2,$0,4
+No hazard detected
+
+PC = 20
+0x00210820 --> add $1,$1,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 28
+0x20210003 --> addi $1,$1,3
+No hazard detected
+
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Hazard detected...
+Hazard solved with flushing
+
+PC = 8
+0xac412000 --> sw $1,8192($2)
+No hazard detected
+
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 16
+0x10400004 --> beq $2,$0,4
+No hazard detected
+
+PC = 20
+0x00210820 --> add $1,$1,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 28
+0x20210003 --> addi $1,$1,3
+No hazard detected
+
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Hazard detected...
+Hazard solved with flushing
+
+PC = 8
+0xac412000 --> sw $1,8192($2)
+No hazard detected
+
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 16
+0x10400004 --> beq $2,$0,4
+No hazard detected
+
+PC = 20
+0x00210820 --> add $1,$1,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 28
+0x20210003 --> addi $1,$1,3
+No hazard detected
+
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Hazard detected...
+Hazard solved with flushing
+
+PC = 8
+0xac412000 --> sw $1,8192($2)
+No hazard detected
+
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 16
+0x10400004 --> beq $2,$0,4
+No hazard detected
+
+PC = 20
+0x00210820 --> add $1,$1,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 28
+0x20210003 --> addi $1,$1,3
+No hazard detected
+
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Hazard detected...
+Hazard solved with flushing
+
+PC = 8
+0xac412000 --> sw $1,8192($2)
+No hazard detected
+
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 16
+0x10400004 --> beq $2,$0,4
+No hazard detected
+
+PC = 20
+0x00210820 --> add $1,$1,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 28
+0x20210003 --> addi $1,$1,3
+No hazard detected
+
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Hazard detected...
+Hazard solved with flushing
+
+PC = 8
+0xac412000 --> sw $1,8192($2)
+No hazard detected
+
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 16
+0x10400004 --> beq $2,$0,4
+No hazard detected
+
+PC = 20
+0x00210820 --> add $1,$1,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 24
+0x00010822 --> sub $1,$0,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 28
+0x20210003 --> addi $1,$1,3
+No hazard detected
+
+PC = 4
+0x1063fff9 --> beq $3,$3,-7
+Hazard detected...
+Hazard solved with flushing
+
+PC = 8
+0xac412000 --> sw $1,8192($2)
+No hazard detected
+
+PC = 12
+0x2042fffc --> addi $2,$2,-4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 32
+0x10400004 --> beq $2,$0,4
+Hazard detected...
+Hazard solved with flushing
+
+PC = 36
+0x20060028 --> addi $6,$0,40
+No hazard detected
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2004
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x0
+
+   b.
+     Memory address to access = 0x2004
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2004
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2004
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2008
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2008
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2008
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2008
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x200c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x200c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x200c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x200c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 72
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall
+
+PC = 76
+0x00802820 --> add $5,$4,$0
+No hazard detected
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2008
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2008
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2008
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2008
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x200c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x200c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x200c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x200c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2010
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x0
+
+   b.
+     Memory address to access = 0x2010
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 2's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2010
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2002
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2010
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x200c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x200c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x200c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x200c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2010
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2010
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2010
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2002
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2010
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2014
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2014
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2014
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2002
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2014
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2010
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2010
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2010
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2002
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2010
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2014
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2014
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2014
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2002
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2014
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2018
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2018
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: Block 3's new tag is 0x0
+
+   c.
+     Memory address to access = 0x2018
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2003
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2018
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 0 has a new tag which is 0x0
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2014
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2014
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2014
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2002
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2014
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2018
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2018
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2018
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2003
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2018
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x201c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x201c
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x201c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2003
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x201c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2018
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2018
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2018
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2003
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2018
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x201c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x201c
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x201c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2003
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x201c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x1
+
+   b.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 0's new tag is 0x1
+
+   c.
+     Memory address to access = 0x2020
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2004
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2020
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 1 has a new tag which is 0x0
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x201c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x201c
+     Block of cache accessed = 3
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x201c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2003
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x201c
+     Set of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2020
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2004
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2020
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2024
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2004
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2024
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2020
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2020
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2004
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2020
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2024
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2004
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2024
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2028
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2028
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x1
+
+   c.
+     Memory address to access = 0x2028
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2005
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2028
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 1 has a new tag which is 0x0
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2024
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2024
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2004
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2024
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2028
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2028
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2028
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2005
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2028
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x202c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x202c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x202c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2005
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x202c
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 36
+0x1446fff4 --> bne $2,$6,-12
+Hazard detected...
+Hazard solved with flushing
+
+PC = 40
+0x00002020 --> add $4,$0,$0
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 44
+0x8c412004 --> lw $1,8196($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2028
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x2028
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x2028
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2005
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2028
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 48
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 52
+0x8c412008 --> lw $1,8200($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x202c
+     Block of cache accessed = 0
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   b.
+     Memory address to access = 0x202c
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+   c.
+     Memory address to access = 0x202c
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2005
+     Hit or Miss? = Hit
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x202c
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2000
+     Hit or Miss? = Hit
+     Cache update: Cache remains the same
+
+PC = 56
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 60
+0x8c41200c --> lw $1,8204($2)
+No hazard detected
+*Cache Access Log*:
+   a.
+     Memory address to access = 0x2030
+     Block of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 1's new tag is 0x1
+
+   b.
+     Memory address to access = 0x2030
+     Block of cache accessed = 2
+     Valid bit & tag info: Valid Bit = 1 Tag Info = 0x2001
+     Hit or Miss? = Miss
+     Cache update: Block 2's new tag is 0x1
+
+   c.
+     Memory address to access = 0x2030
+     Set/Block of cache accessed = None
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2006
+     Hit or Miss? = Miss
+     No cache update needed 
+
+   d.
+     Memory address to access = 0x2030
+     Set of cache accessed = 1
+     Valid bit & tag info: Valid Bit = 0 Tag Info = 0x2000
+     Hit or Miss? = Miss
+     Cache update: One of the ways in set 1 has a new tag which is 0x0
+
+PC = 64
+0x00812020 --> add $4,$4,$1
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 68
+0x00a4082a --> slt $1,$5,$4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 76
+0x10200001 --> beq $1,$0,1
+Hazard detected...
+Hazard solved with a stall and flushing
+
+PC = 80
+0x20420004 --> addi $2,$2,4
+Hazard detected...
+Hazard solved by forwarding with no delay
+
+PC = 84
+0x1446fff4 --> bne $2,$6,-12
+No hazard detected
+
+PC = 88
+0xac052000 --> sw $5,8192($0)
+No hazard detected
+
+PC = 92
+0x1000ffff --> beq $0,$0,-1
+Deadloop Reached
+-------------------------
+Simulation done...
+-------------------------
+*Results*:
+Dynamic Instruction Count: 161
+PC: 92
+Registers: 
+   $1 = 0
+   $2 = 40
+   $3 = 0
+   $4 = 0
+   $5 = 51
+   $6 = 40
+   $7 = 0
+Overall Hit Rate:
+   a. 87%
+   b. 77%
+   c. 50%
+   d. 76%
+For Multicycle CPU:
+   Total Cycle Count = 640
+   Number of 3-cycle Instructions: 34
+   Number of 4-cycle Instructions: 97
+   Number of 5-cycle Instructions: 30
+For Pipelined CPU:
+   Total Cycle Count = 220
+   Breakdown of hazards = 35
+>>> 
